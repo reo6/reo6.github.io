@@ -16,29 +16,23 @@
             font-size: 18px;
             line-height: 2.0;
         }
-
         main {
             max-width: 800px;
         }
-
         a {
             color: #f3ef3b;
         }
-
         h1 {
             text-align: center;
         }
-
         .root-li {
             margin-top: 23px;
         }
-
     </style>
 </head>
 <body>
     <main>
-        <h1>reo</h1>
-        <small>oǝɹ</small>
+        <h1 id="title">reo</h1>
         <ul>
             <li class="root-li"><a href="https://old.reoco.de">old.reoco.de</a>: Old version of this website</li>
             <li class="root-li">About
@@ -95,4 +89,13 @@
         </ul>
     </main>
 </body>
+<script>
+var title = document.getElementById("title");
+title.addEventListener("mouseover", function() {
+    title.textContent = "ɹǝo";
+});
+title.addEventListener("mouseout", function() {
+    title.textContent = "reo";
+});
+</script>
 </html>
